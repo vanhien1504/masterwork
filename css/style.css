@@ -7,7 +7,11 @@
 body, html {
     font-family: 'Nunito', sans-serif;
 }
-
+var {
+    --bg--:#fff;
+    --card-curve: 6px;
+    --light-bg-color: #F7F9FC;
+}
 header.main-header {
     background-color: #ffffff;
     padding: 20px 90px;
@@ -17,13 +21,7 @@ header.main-header {
     align-items: center;
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
 }
-.fixed-top {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1;
-}
+
 .navbar-brand span {
     color: #dc4f72;
 }
@@ -107,4 +105,33 @@ a.search-search span.fa {
 }
 .btn-group:hover {
     color: #ffffff;
+}
+h6 {
+    color: #dc4f72;
+}
+h3{
+    color: #212529;
+}
+p{
+    color: #212529;
+}
+
+.w3l-index2 .s-block {
+    border-radius: var(--card-curve);
+   
+    background: var(--light-bg-color);
+    padding: 3rem 2rem;
+    border: 1px solid var(--light-bg-color);
+    background: rgb(247,249,252);
+    border-radius: 10px; 
+   
+    backdrop-filter: blur(6px);
+     box-shadow: 0 0 2px 0 rgba(0,0,0,.3);
+    padding: 10px;
+    transform: translateY(0);
+    transition: all 0.5s;
+}
+.w3l-index2 .s-block:hover{
+    color: #ffffff;
+    transform: translateY(-10px);
 }
