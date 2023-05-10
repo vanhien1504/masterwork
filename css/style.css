@@ -11,6 +11,7 @@ var {
     --bg--:#fff;
     --card-curve: 6px;
     --light-bg-color: #F7F9FC;
+    --title-color-: #2C3038;
 }
 h3{
     color: #dc4f72;
@@ -123,7 +124,7 @@ p{
     color: #212529;
 }
 
-.w3l-index2 .s-block {
+.wel-index2 .s-block {
     border-radius: var(--card-curve);
    
     background: var(--light-bg-color);
@@ -138,29 +139,15 @@ p{
     transform: translateY(0);
     transition: all 0.5s;
 }
-.w3l-index2 .s-block:hover{
+.wel-index2 .s-block:hover{
     background-color: #ffffff;
     transform: translateY(-10px);
 }
 
 
-.content {
 
-/* background-image: url(../img/banner.jpg);    position: relative; */
-    z-index: 1;
-    overflow: hidden;
-    background-repeat: no-repeat,
-        no-repeat,
-        no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    display: grid;
-    align-items: center;
-    padding-top: 5rem;
-}
 
-.w3l-index3 {
+.wel-index3 {
     background-color: #F7F9FC;
    
 }
@@ -176,9 +163,7 @@ p{
  */
  .wel-stats .stats_info{
    
- background-color: white;
- border: 1px solid #eee;
- background: rgb(247, 248, 252);
+ border: 1px solid #F7F9FC;
  border-radius: 10px; 
 
  backdrop-filter: blur(6px);
@@ -205,13 +190,16 @@ p{
     border-bottom: 2px;
 }
 /*  */
-.wel-faq-block .w3l-faq ul li {
-    position: relative;
-    padding: 25px 50px 25px 20px;
-    border: 1px solid var(--border-color);
-    margin: 0 0 15px 0;
-    border-radius: var(--card-curve);
-    background: var(--bg-color);
+
+
+ .btn-primary {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: normal;
+    display: block;
+    margin: 0;
+    cursor: pointer;
+    color: var(--title-color);
 }
 .wel-faq-block .w3l-faq p {
     color: var(--text-color);
@@ -224,4 +212,9 @@ p{
     transform: translate(0, 0);
     margin-top: 14px;
     z-index: 2;
+}
+/* table */
+.img-cusve{
+    width: 90%;
+    padding: 130px 69px;
 }
