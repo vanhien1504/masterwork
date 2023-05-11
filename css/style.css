@@ -12,12 +12,21 @@ var {
     --card-curve: 6px;
     --light-bg-color: #F7F9FC;
     --title-color-: #2C3038;
+    --card--shaww:1px 5px 7.5px rgba(14, 13, 13, 0.2);
 }
 h3{
     color: #dc4f72;
 }
 li{
     list-style: none;
+}
+
+a{
+    
+    color: #2C3038;
+}
+a:hover{
+    color: #dc4f72  ;
 }
 /* ------ */
 header.main-header {
@@ -152,6 +161,7 @@ p{
    
 }
 .img-curve {
+    
     border-radius: 10px;
    transition: 0.3s ease;
    transform: translateY(0);
@@ -214,7 +224,122 @@ p{
     z-index: 2;
 }
 /* table */
-.img-cusve{
-    width: 90%;
-    padding: 130px 69px;
+.portAvatar{
+    width: 140px;
+    border-radius: 50%;
+    
+
+      
+      
+    
+    
+    
+}
+/* vw : viewport width (thường dùng cho font size , vùng nội dung chữ quan trọng mà khách hàng 
+    không muốn thay đổi nội dung ví dụ như slogan, banner, carousel)
+    %: lấy kích thước thẻ cha gần nhất
+    vw: lấy kích thước của trình duyệt
+    vh: viewport height 
+    */
+
+/*Bước 2  */
+#portCarouselID .carousel-item{
+    height: 100vh;
+}
+#portCarouselID .carousel-item>img{
+    height: 90%;
+    filter: brightness(60%);
+    object-fit: cover;
+}
+#portCarouselID .carousel-caption{
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%);
+}
+
+/* #portCarouselID .carousel-caption{
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%);
+} xử lý code position: absolute;
+B3: chỉnh caption, ở giữa thẻ có position absolute
+ */
+ 
+/* B4: chỉnh hình dạng indicators */ 
+#portCarouselID .carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+#portCarouselID .carousel-indicators li.active{
+    background-color: #dc4f72;
+}
+
+
+/* CAROUSEL */
+.w3l-footer .end-column {
+    border: 1px solid #F7F9FC;
+ border-radius: 10px; 
+
+ backdrop-filter: blur(6px);
+  box-shadow: 0 0 2px 0 rgba(0,0,0,.3);
+ padding: 30px 20px;
+ transform: translateY(0);
+ transition: all 0.5s;}
+
+ .w3l-footer .subscribe input[type="email"] {
+    background: var(--light-bg-color);
+    border-radius: 7px ;
+    padding: 12px 20px;
+    font-size: 16px;
+    outline: none;
+    width: 78%;
+    color: var(--title-color-);
+    font-weight: 600;
+    
+}
+
+.w3l-footer .subscribe button {
+    text-align: center;
+    background: #dc4f72;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 20px;
+    cursor: pointer;
+    width: 20%;
+    color: #fff;
+    border-radius: 5px;
+}
+.w3l-footer li a i {
+    display: flex;
+    flex-wrap: wrap;
+    height: 30px; 
+    width: 30px; 
+    line-height: 30px;
+}
+/* BACK TO TOP */
+.backToTop {
+    width: 50px;
+    height: 50px;
+    background: #f55f8d;
+    border-radius: 8px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    color: white;
+    transition: all .2s;
+    box-shadow: -4px 4px 24px -10px #f55f8d;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
 }
